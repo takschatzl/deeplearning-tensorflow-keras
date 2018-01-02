@@ -51,7 +51,7 @@ X_train, X_validation, Y_train, Y_validation = \
 モデル設定
 '''
 n_in = len(X[0][0])  # 1
-n_hidden = 20
+n_hidden = 30
 n_out = len(Y[0])  # 1
 
 
