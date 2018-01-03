@@ -22,7 +22,7 @@ def inference(x, n_batch, maxlen=None, n_hidden=None, n_out=None):
 
     state = initial_state
     outputs = []  # 過去の隠れ層の出力を保存
-    with tf.variable_scope('LSTM'):
+    with tf.variable_scope('RNN'):
         for t in range(maxlen):
             if t > 0:
                 tf.get_variable_scope().reuse_variables()
